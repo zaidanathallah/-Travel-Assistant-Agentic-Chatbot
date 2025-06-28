@@ -23,7 +23,7 @@ if "show_clear_confirmation" not in st.session_state:
 
 # ====== Load .env ======
 load_dotenv()
-cohere_api_key = os.getenv("COHERE_API_KEY")  # Ambil dari .env
+cohere_api_key = st.secrets["COHERE_API_KEY"]  # Ganti baris load_dotenv  # Ambil dari .env
 
 # ====== Streamlit Config ======
 st.set_page_config(page_title="Travel Chatbot", layout="centered")
