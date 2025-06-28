@@ -5,10 +5,10 @@ from langchain_community.vectorstores import FAISS
 from langchain_cohere import CohereEmbeddings
 
 # ====== Load datasets ======
-TRANSPORT_PATH = "D:\zaidan\Project Akhir\dataset\Transport_schedule.csv"
-PROMO_PATH = "D:\zaidan\Project Akhir\dataset\promo_travel.csv"
-DESTINATION_PATH = "D:\zaidan\Project Akhir\dataset\destination_info.csv"
-HOTEL_PATH = "D:\zaidan\Project Akhir\dataset\hotel_availability.csv"
+TRANSPORT_PATH = "./dataset/Transport_schedule.csv"
+PROMO_PATH = "./dataset/promo_travel.csv"
+DESTINATION_PATH = "./dataset/destination_info.csv"
+HOTEL_PATH = "./dataset/hotel_availability.csv"
 
 df_transport = pd.read_csv(TRANSPORT_PATH)
 df_promo = pd.read_csv(PROMO_PATH)
